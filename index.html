@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Off The Beaten Track Travel Blog</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./images/Against-the-compass-expedition-logo-1024x518.jpg">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ramabhadra&family=Headland+One&display=swap" rel="stylesheet">
+    
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+        <!-- Bootstrap JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    
+
+<body>
+    <!-- opening section -->
+    <div class="opener" id="top">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img id="navbar-logo" src="https://againstthecompass.com/wp-content/themes/againstthecompass/assets/other/logo-white.svg" alt="Logo" style="width: 248px; height: 55px;">
+                    </a>
+                </div>
+        
+                <!-- Hamburger Icon -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul type="none">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 17px;">Start Here</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About</a></li>
+                                <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Travel Blog</a></li>
+                        <li><a href="">Countries</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Expeditions</a></li>
+                        <li><a href="">Travel Insurance</a></li>
+                        <li><a href="">Resources</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img width="18" height="12" class="wpml-ls-flag" src="https://againstthecompass.com/wp-content/uploads/flags/2807791_18166.png" alt="">
+                                English
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                    <img width="18" height="12" src="https://againstthecompass.com/wp-content/uploads/flags/2807793_18168.png" alt="" style="font-size: 17px;">
+                                    Spanish</a>
+                                </li>    
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+        <div class="inner">
+            <div class="content">
+                <h1>Off The Beaten Track <br> Travel Blog</h1>
+                <p>Hey, this is Joan Torres, and  <b>AGAINST THE COMPASS</b> is a different travel blog, which aims at HELPING you to 
+                    travel to the most unusual and off the beaten track destinations
+                </p>
+                <button>Subscribe ></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            var logo = document.getElementById('navbar-logo');
+            if (window.scrollY > 0) { // Adjust the scroll distance as needed
+                navbar.classList.add('scrolled');
+                logo.src ='https://againstthecompass.com/wp-content/uploads/2018/10/ATC-Logo-120px.png'; // Change to the path of the new logo
+            } else {
+                navbar.classList.remove('scrolled');
+                logo.src = 'https://againstthecompass.com/wp-content/themes/againstthecompass/assets/other/logo-white.svg'; // Original logo path
+            }
+        });
+    </script>
+
+    <!-- subscription -->
+    <section id="for_subscription">
+        <div class="subs">
+            <div class="container">
+                <div>
+                    <p class="fs-4 text-light">GET TRAVEL TIPS <br> FOR OFFBEAT <br> COUNTRIES</p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="   First Name" class="ms-auto">
+                    <input type="email" placeholder="   Email" class="ms-auto">
+                    <button class="ms-auto">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#top">
+                <i class="fa-solid fa-chevron-up fa-2xl" style="color: #ffffff;"></i></a>
+            </div>
+        </div>  
+    </section>
+
+    <!-- travel advice -->
+    <section id="travel_advice">
+        <div class="travel_ad">
+            <div class="container">
+                <h6 class="mt-5 text-center">MY TRAVEL ADVICE HAS BEEN FEATURED ON</h6>
+                <div class="text-center">
+                    <img src="./images/banner1.jpg" alt="" class="mt-5" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- favourite countries -->
+    <section id="favourites">
+        <div class="fav bg-body-secondary ">
+            <h1 class="p-5 fs-1 text-center"><b>my favourite countries</b></h1>
+            <div class="gallery">
+                <div class="cards">
+                    <img src="https://againstthecompass.com/wp-content/uploads/2023/03/syria.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="country">
+                        <h3 class="text-light">SYRIA</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://againstthecompass.com/wp-content/uploads/2023/03/pakistan.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="country">
+                        <h3 class="text-light">PAKISTAN</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://againstthecompass.com/wp-content/uploads/2023/03/kyrgyzstan.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="country">
+                        <h3 class="text-light">KYRGYZSTAN</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://againstthecompass.com/wp-content/uploads/2023/03/iraq.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="country">
+                        <h3 class="text-light">IRAQ</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://againstthecompass.com/wp-content/uploads/2023/03/mauritania.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="country">
+                        <h3 class="text-light">MAURITANIA</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://againstthecompass.com/wp-content/uploads/2023/03/mali.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="country">
+                        <h3 class="text-light">MALI</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://againstthecompass.com/wp-content/uploads/2023/03/eritrea.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="country">
+                        <h3 class="text-light">ERITREA</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://againstthecompass.com/wp-content/uploads/2023/03/afghanistan.jpg" alt="" style="width: 100%; height: 100%;">
+                    <div class="country">
+                        <h3 class="text-light">AFGHANISTAN</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="mb-4"><strong>VIEW ALL COUNTRIES</strong></button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- expeditions -->
+    <section id="expeditions">
+        <div class="expeds mt-5">
+            <div class="container m-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 p-5">
+                        <div class="content mt-5 w-100">
+                            <h2>Join Our <br> EXPEDITIONS</h2>
+
+                            <p>Syria, Federal Iraq, Saudi Arabia, Mauritania, Kurdistan, Mali, Pakistan and many more to come.</p>
+                            <p>Against the Compass is finally running epic group expeditions into the most adventurous destinations, with 
+                                a heavy focus on the local people and culture, while creating outstanding travel families.</p>
+                            <p>We run expeditions every single month.</p>
+                            <button class="mt-2">SCHEDULED EXPEDITIONS ></button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 p-5">
+                        <img src="https://againstthecompass.com/wp-content/uploads/2023/04/Expedition-Image.jpeg" alt=""
+                            style="height: 100%; width: 100%; border-radius: 25px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- region -->
+    <section id="posts">
+        <div class="post bg-body-secondary pb-4">
+            <h1 class="text-center p-5"><b>browse by regions</b></h1>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card2" style="background-image: url('https://againstthecompass.com/wp-content/uploads/2023/03/Central-Asia-category.jpg');">
+                        <h3>Central Asia</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card2" style="background-image: url('https://againstthecompass.com/wp-content/uploads/2023/03/Horn-of-Africa-category.jpg');">
+                        <h3>Horn of Africa</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card2" style="background-image: url('https://againstthecompass.com/wp-content/uploads/2023/03/Middle-East-category.jpg');">
+                        <h3>Middle East</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- newsletter -->
+    <section id="news_letter">
+        <div class="news p-5">
+            <div class="container bg-body-secondary">
+                <h2><i class="fa-solid fa-envelope" style="color: #1f3701;"></i> JOIN our Newsletter</h2>
+
+                <h5 class="mt-5"><b>Subscribe to our email list, and receive:</b></h5>
+
+                <p class="mt-5"><i class="fa-solid fa-thumbs-up" style="color: #1f3701;"></i> Upcoming expeditions before we run out of spots</p>
+
+                <p class="mt-4"><i class="fa-solid fa-thumbs-up" style="color: #1f3701;"></i >Access to <u>Against the Compass</u> email list, where I regularly share tips not found on my blog</p>
+
+                <p class="mt-4"><i class="fa-solid fa-thumbs-up" style="color: #1f3701;"></i> Personal trip announcements.</p>
+
+                <div class="form2 mt-5 d-flex p-5">
+                    <input type="text" placeholder="First Name">
+                    <input type="email" placeholder="Email">
+                    <button class="ms-auto">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- posts -->
+    <section id="posts">
+        <div class="post bg-body-secondary pb-4">
+            <h1 class="text-center p-5"><b>Latest Posts</b></h1>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card2" style="background-image: url('https://againstthecompass.com/wp-content/uploads/2023/06/thumbnail-1.jpg');">
+                        <h3 class="text-center">How to travel to Afghanistan during Taliban rule (2024)</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card2" style="background-image: url(https://againstthecompass.com/wp-content/uploads/2022/06/thumbnail-1.jpg);">
+                        <h3 class="text-center">How to Travel to Libya in 2024</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card2" style="background-image: url(https://againstthecompass.com/wp-content/uploads/2024/04/feature-1.jpg);">
+                        <h3 class="text-center">Backpacking Venezuela Travel Guide (2024)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center mb-5">
+        <button id="btn">ALL POSTS</button>
+    </div>
+    
+
+    <!--travel tips -->
+    <div class="tips bg-body-secondary pb-4">
+        <h1 class="text-center p-5"><b>Travel Tips</b></h1>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card2">
+                    <h3 class="text-center">Country Guides & Itineraries</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card2">
+                    <h3 class="text-center">Safety Travel</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card2">
+                    <h3 class="text-center">Unrecognized Countries</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- footer -->
+    <footer>
+    <div class="foot">
+        <div class="container-fluid pt-4 ps-5">
+            <div class="row">
+                <!-- Logo and Social Icons -->
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <img src="https://againstthecompass.com/wp-content/themes/againstthecompass/assets/other/logo-white.svg" alt=""
+                         style="width: 90%;">
+                    <div class="icons mt-4 d-flex justify-content-center justify-content-md-start" style="width: 250px;">
+                        <p class="fs-3 me-3"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></p>
+                        <p class="fs-3 me-3"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></p>
+                        <p class="fs-3"><i class="fa-brands fa-pinterest fa-2xl" style="color: #ffffff;"></i></p>
+                    </div>
+                </div>
+                <!-- About Us Section -->
+                <div class="col-6 col-md-3 mt-4 mt-md-0">
+                    <ul class="list-unstyled">
+                        <li><a href="" class="section-title fs-1">About Us</a></li>
+                        <li><a href="">Expeditions</a></li>
+                        <li><a href="">About Against The Compass</a></li>
+                        <li><a href="">Media</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Links Section -->
+                <div class="col-6 col-md-3 mt-4 mt-md-0">
+                    <ul class="list-unstyled">
+                        <li><a href="" class="section-title fs-1">Quick Links</a></li>
+                        <li><a href="">Travel Resources</a></li>
+                        <li><a href="">Scheduled Tours</a></li>
+                        <li><a href="">Travel Insurance</a></li>
+                        <li><a href="">VPN For Travel</a></li>
+                        <li><a href="">Start A Travel Blog</a></li>
+                        <li><a href="">Travel Guides</a></li>
+                    </ul>
+                </div>
+                <!-- Destinations Section -->
+                <div class="col-12 col-md-3 mt-4 mt-md-0">
+                    <ul class="list-unstyled">
+                        <li><a href="" class="section-title fs-1">Destinations</a></li>
+                        <li><a href="">Syria</a></li>
+                        <li><a href="">Iraq</a></li>
+                        <li><a href="">Unrecognized Countries</a></li>
+                        <li><a href="">Middle East</a></li>
+                        <li><a href="">Afghanistan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h5 class="text-light mt-5 text-center">© 2024 Against The Compass</h5>
+        </div>
+    </div>
+</footer>
+
+    
+</body>
+
+
+
+</html>

@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.opener {
+    height: 710px;
+    background-image: url(https://againstthecompass.com/wp-content/uploads/2023/03/DSC0621611.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    height: 75px;
+    background-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.navbar.scrolled {
+    background-color: rgb(243, 237, 237);
+    padding: 10px 20px;
+}
+
+.navbar.scrolled ul li a {
+    color: rgb(0, 0, 0);
+}
+
+/* Styles for the navbar when the menu is expanded */
+.collapse.show {
+    background-color: rgb(177, 165, 165); /* Change this to your desired background color */
+}
+
+.collapse.show ul {
+    flex-direction: column; /* Stack the items vertically */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.collapse.show ul li {
+    margin-right: 0; /* Remove horizontal margin */
+    margin-bottom: 10px; /* Add vertical spacing between items */
+    color: wheat;
+}
+
+/* Hide the navbar toggler above 1000px */
+@media (min-width: 1001px) {
+    .navbar-toggler {
+        display: none; /* Hide hamburger icon */
+    }
+
+    .navbar-collapse {
+        display: flex !important; /* Ensure the nav items are always displayed */
+    }
+}
+
+/* Show the navbar toggler below 1000px */
+@media (max-width: 1000px) {
+    .navbar-collapse {
+        display: none; /* Hide nav items by default */
+    }
+    
+    .navbar-collapse.show {
+        display: block !important; /* Show nav items when expanded */
+    }
+}
+
+
+
+
+
+
+
+
+.opener .inner {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .3) 65%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opener .inner .content {
+    color: white;
+    width: 700px;
+}
+
+.opener .inner .content h1 {
+    font-family: "Ramabhadra", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 60px;
+}
+
+.opener .inner .content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.opener .inner .content button {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #31551d;
+    border-radius: 5px;
+    border: 2px solid #85ab86;
+    padding: 11px 30px;
+}
+
+.opener .inner .content button:hover {
+    text-decoration: underline;
+}
+
+
+/* subscription */
+/* subscription */
+.subs {
+    height: auto; /* Use auto height for flexibility */
+    background-color: #31551d;
+    display: flex;
+    justify-content: center; /* Center content on smaller screens */
+    position: relative;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.subs .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center content */
+    justify-content: center;
+    padding: 0; /* Remove padding to allow for flexibility */
+}
+
+.form {
+    margin-bottom: 30px;
+    display: flex; /* Flexbox for form elements */
+    flex-direction: column; /* Stack inputs and button vertically */
+    align-items: center; /* Center elements */
+}
+
+/* Adjust input and button styles */
+.subs .container .form input {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 330px; /* Limit maximum width */
+    height: 50px;
+    margin: 5px 0; /* Add margin for spacing */
+    outline: none;
+    padding: 10px;
+}
+
+.subs .container .form button {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 300px; /* Limit maximum width */
+    height: 50px;
+    color: #fff;
+    background-color: #e55b00;
+    border-radius: 4px;
+    font-weight: 700;
+    border: none;
+    padding: 0px 20px;
+}
+
+.subs .container .form button:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+    .subs .container {
+        flex-direction: row; /* Align items in a row on larger screens */
+        justify-content: space-between; /* Space between items */
+        padding: 50px; /* Add padding */
+    }
+
+    .subs .container .form {
+        flex-direction: row; /* Align form elements in a row */
+    }
+
+    .subs .container .form input {
+        margin: 0 5px; /* Horizontal margin for inputs */
+    }
+}
+
+/* travel advice */
+.travel_ad .container {
+    height: auto; /* Use auto height for flexibility */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.travel_ad .container h6 {
+    color: #989898;
+    text-align: center;
+    font-size: 1.5rem; /* Use rem for responsive font size */
+    font-weight: 400;
+}
+
+.travel_ad .container img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .travel_ad .container h6 {
+        font-size: 1.2rem; /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .travel_ad .container h6 {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+    
+    .travel_ad .container {
+        padding: 10px; /* Reduce padding on mobile */
+    }
+}
+
+
+/* favourite countries */
+
+.fav h1 {
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.gallery .cards {
+    margin-bottom: 5px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .cards:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.gallery .cards img {
+    object-fit: cover;
+    filter: brightness(0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .cards .country {
+    position: absolute;
+}
+
+.gallery .cards .country h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.fav button {
+    height: 60px;
+    border: none;
+    background-color: #31551d;
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+    padding: 15px 30px;
+}
+
+.fav button:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .fav h1 {
+        font-size: 2rem; /* Smaller title font size on mobile */
+    }
+
+    .gallery .cards .country h3 {
+        font-size: 30px; /* Smaller country name font size on mobile */
+    }
+
+    .fav button {
+        width: 100%; /* Full width button on mobile */
+        padding: 10px; /* Smaller padding on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery .cards .country h3 {
+        font-size: 24px; /* Even smaller country name font size on very small screens */
+    }
+}
+
+
+/* expeditions */
+.expeds{
+    width: 100%;
+}
+
+.expeds .content{
+    width: 600px;
+}
+
+.expeds .content h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    color: black;
+}
+
+.expeds .content p{
+    line-height: 1.5;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.expeds .content button{
+    height: 60px;
+    border: none;
+    background-color: #31551d;
+    color: white;
+    font-weight: 700;
+}
+
+.expeds .content button:hover{
+    text-decoration: underline;
+}
+
+/* regions, posts, tips */
+.reg h1,.post h1,.tips h1{
+    font-size: 50px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.reg .card2,.post .card2,.tips .card2 {
+    width: 100%;
+    height: 350px;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    transition: background-size 0.5s ease, opacity 0.5s ease;
+}
+
+.reg .card2:hover,.post .card2:hover,.tips .card2:hover{
+    opacity: 0.9;
+    background-size: 103% 103%;
+}
+
+.reg .card2 h3,.tips .card2 h3{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    right: 20px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.post .card2 h3{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 260px;
+    padding: 10px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: justify;
+}
+
+
+/* Regions Section */
+
+/* Responsive styling */
+
+@media (max-width: 768px) {
+    .reg .card2 {
+        height: 200px;
+    }
+    .reg h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .reg .card2 {
+        height: 150px;
+    }
+    .reg h1 {
+        font-size: 24px;
+    }
+    .reg .card2 h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* Newsletter */
+.news .container {
+    height: 700px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.news h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 80px;
+    color: black;
+}
+
+.news p {
+    font-size: 20px;
+}
+
+.news .form2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news .form2 input {
+    width: 420px;
+    height: 50px;
+    margin-right: 5px;
+    outline: none;
+    border: 1px solid rgb(199, 187, 187);
+    padding: 10px;
+}
+
+.news .form2 button {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color: #e55b00;
+    border-radius: 4px;
+    font-weight: 700;
+    border: none;
+    padding: 0px 20px;
+}
+
+.news .form2 button:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .news .container {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .news h2 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+
+    .news p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .news .form2 input {
+        width: 90%;
+        height: 45px;
+        margin: 5px 0;
+    }
+
+    .news .form2 button {
+        width: 100%;
+        margin-top: 10px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .news h2 {
+        font-size: 28px;
+        line-height: 50px;
+    }
+
+    .news p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .news .form2 input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .news .form2 button {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+
+/* posts */
+#btn{
+    height: 55px;
+    border: none;
+    background-color: #31551d;
+    color: white;
+    font-weight: 700;
+    padding: 0px 30px;
+    margin-bottom: 100px;
+}
+
+#btn:hover{
+    text-decoration: underline;
+}
+
+/* footer */
+
+/* Footer */
+.foot {
+    background-color: #31551d;
+    padding: 30px 15px;
+    color: white;
+}
+
+.foot ul {
+    padding: 0;
+}
+
+.foot ul li {
+    margin-bottom: 10px;
+}
+
+.foot ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.foot h5 {
+    font-weight: 400;
+}
+
+.section-title {
+    
+    font-weight: 350;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .foot .icons {
+        justify-content: center;
+    }
+    .foot ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 20px;
+    }
+    .foot .icons {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+.arrow{
+    width: 60px;
+    height: 70px;
+    background-color: #31551d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+    position: fixed;
+    z-index: 1;
+    margin-right: 20px;
+    top: 87%;
+    left: 90%;
+
+}
+
+/* travel tips */
+
+.card2 {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+
+/* Background images for each card */
+
+.col-md-4:nth-of-type(1) .card2 {
+    background-image: url('https://againstthecompass.com/wp-content/uploads/2023/03/Travel-guides-category.jpg');
+}
+
+.col-md-4:nth-of-type(2) .card2 {
+    background-image: url('https://againstthecompass.com/wp-content/uploads/2023/03/Safety-travel-category.jpg');
+}
+
+.col-md-4:nth-of-type(3) .card2 {
+    background-image: url('https://againstthecompass.com/wp-content/uploads/2023/03/Unrecognized-country-category.jpg');
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card2 {
+        height: 200px;
+    }
+    .tips h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card2 {
+        height: 150px;
+    }
+    .tips h1 {
+        font-size: 24px;
+    }
+    .card2 h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* Posts */
+@media (max-width: 768px) {
+    .card2 {
+        height: 200px;
+    }
+    #posts h1 {
+        font-size: 28px;
+    }
+    #btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card2 {
+        height: 150px;
+    }
+    #posts h1 {
+        font-size: 24px;
+    }
+    .card2 h3 {
+        font-size: 16px;
+    }
+    #btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+
